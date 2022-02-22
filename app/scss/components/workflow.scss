@@ -1,0 +1,31 @@
+@use '../util' as *;
+
+.workflow {
+
+  &__main-content {
+    margin-bottom: rem(94);
+  }
+
+  &__sub-content {
+    > img {
+      height: rem(40);
+      margin-bottom: rem(48);
+    }
+    @include breakpoint-down(medium) {
+      &:not(:last-child) {
+        margin-bottom: rem(60);
+      }
+    }
+  }
+
+  &__flex {
+    @include breakpoint(large) {
+      display: flex;
+      flex-direction: row;
+      gap: rem(35);
+      &-item {
+        flex: 1;
+      }
+    }
+  }
+}

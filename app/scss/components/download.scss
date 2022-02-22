@@ -1,0 +1,10 @@
+@use '../util' as *;
+
+.download {
+  > p {
+    margin-bottom: rem(52);
+    @include breakpoint(large) {
+      font-size: rem(18);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use '../util' as *;
+.footers {
+  background-color: var(--lt-grayish-blue);
+}
+
+.footer {
+  padding: rem(50) 0;
+  
+  a {
+    color: var(--dark-grayish-blue);
+  }
+
+  &__logo {
+    margin-bottom: rem(48);
+    img {
+      width: rem(57);
+    }
+  }
+
+  &__links {
+    margin-bottom: rem(48);
+    :not(:last-child) {
+      margin-bottom: rem(33);
+    }
+  }
+  
+  &__sm-links {
+    > a {
+      font-size: rem(25);
+      &:not(:last-child) {
+        margin-right: rem(36);
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    justify-items: start;
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__sm-links {
+      justify-self: end;
+    }
+  }
+}

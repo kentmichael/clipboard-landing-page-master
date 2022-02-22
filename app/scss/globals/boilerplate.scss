@@ -12,11 +12,48 @@ html {
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: rem(26);
+  margin-bottom: rem(26);
+  @include breakpoint(large) {
+    font-size: rem(34);
+  }
+}
+
+h3 {
+  font-size: rem(23);
+  margin-bottom: rem(23);
+}
+
+p {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
   font-weight: 400;
-  font-size: rem(18);
+  font-size: 1rem;
   color: var(--grayish-blue);
+  line-height: 1.8;
+  text-align: center;
+
+  background-image: url(/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+
+  @include breakpoint(medium) {
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
 }

@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: rem(67);
+  @include breakpoint(large) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

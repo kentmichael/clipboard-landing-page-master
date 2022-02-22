@@ -1,0 +1,37 @@
+@use '../util' as *;
+
+.clipboard {
+  > p {
+    margin-bottom: rem(70);
+    @include breakpoint(large) {
+      font-size: rem(18);
+      margin-bottom: rem(105);
+    }
+  }
+
+  &__img {
+    position: relative;
+    background-image: url('/images/image-devices.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: rem(252);
+
+    @include breakpoint(large) {
+      background: none;
+      height: rem(472);
+      &::after {
+        content: '';
+        background-image: url('/images/image-devices.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        position: absolute;
+        top: rem(-60);
+        right: rem(-100);
+        bottom: rem(-95);
+        left: rem(-100);
+      }
+    }
+  }
+}
