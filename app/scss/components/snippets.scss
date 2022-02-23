@@ -12,6 +12,18 @@
   }
 
   &__flex {
+
+    @include breakpoint(medium) {
+      display: flex;
+      flex-flow: row wrap;
+      gap: rem(20);
+      &-item {
+        text-align: left;
+        flex: 1;
+        align-self: center;
+      }
+    }
+
     @include breakpoint(large) {
       display: flex;
       flex-flow: row wrap;
@@ -31,6 +43,24 @@
     background-size: contain;
     height: rem(287);
     margin-bottom: rem(62);
+
+    @include breakpoint(medium) {
+      margin: 0;
+      background: none;
+      height: rem(572);
+      &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/image-computer.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
 
     @include breakpoint(large) {
       margin: 0;
