@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    height: rem(252);
+    height: rem(220);
 
     @include breakpoint(large) {
       background: none;
@@ -27,7 +27,7 @@
         background-position: center center;
         background-size: contain;
         position: absolute;
-        top: rem(-60);
+        top: rem(-92);
         right: rem(-100);
         bottom: rem(-95);
         left: rem(-100);

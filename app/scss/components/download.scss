@@ -7,4 +7,38 @@
       font-size: rem(18);
     }
   }
+
+  &__button {
+    display: block;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: rem(30);
+    padding: rem(16);
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+
+    @include breakpoint-down(small) {
+      &:not(:last-child) {
+        margin-bottom: rem(25);
+      }
+    }
+
+    @include breakpoint(medium) {
+      display: inline-block;
+      padding: rem(14) rem(35);
+      &:not(:last-child) {
+        margin-right: rem(15);
+      }
+    }
+
+    &-ios {
+      background-color: var(--strong-cyan);
+    }
+    &-mac {
+      background-color: var(--light-blue);
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
 }

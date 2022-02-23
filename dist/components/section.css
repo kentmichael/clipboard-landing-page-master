@@ -1,0 +1,2 @@
+.section h1,.section h2,.section h3{color:var(--dark-grayish-blue);font-weight:600}.section__button{border-radius:2.5rem;color:var(--white);display:inline-block;font-weight:600;opacity:1;padding:.9375rem 2.25rem;transition:.2s ease-in}.section__button--ios{background-color:var(--strong-cyan)}.section__button--mac{background-color:var(--light-blue)}.section__button:hover{opacity:.8}.flex{display:flex;flex-flow:column wrap;gap:3.125rem}.flex_btn{gap:1.25rem;width:100%}.flex__ai_c{align-items:center}
+/*# sourceMappingURL=section.css.map */

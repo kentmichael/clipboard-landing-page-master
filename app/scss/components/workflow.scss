@@ -11,6 +11,9 @@
       height: rem(40);
       margin-bottom: rem(48);
     }
+    > h3 {
+      margin-bottom: rem(27);
+    }
     @include breakpoint-down(medium) {
       &:not(:last-child) {
         margin-bottom: rem(60);

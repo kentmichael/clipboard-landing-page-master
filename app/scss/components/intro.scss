@@ -1,15 +1,18 @@
 @use '../util' as *;
 
 .intro {
-  > img {
-    width: rem(126);
-    height: rem(126);
+  &__logo {
+    display: inline-block;
     margin-bottom: rem(75);
+    img {
+      width: rem(126);
+      height: rem(126);
+    }
     @include breakpoint(large) {
       margin-bottom: rem(70);
     }
   }
-
+  
   > h1 {
     margin-bottom: rem(26);
     font-size: rem(30);
