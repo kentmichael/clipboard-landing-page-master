@@ -11,7 +11,7 @@
 
   &__img {
     position: relative;
-    background-image: url('/images/image-devices.png');
+    background-image: url('../images/image-devices.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -22,7 +22,7 @@
       height: rem(472);
       &::after {
         content: '';
-        background-image: url('/images/image-devices.png');
+        background-image: url('../images/image-devices.png');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;

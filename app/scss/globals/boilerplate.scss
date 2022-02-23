@@ -45,13 +45,13 @@ body {
   line-height: 1.8;
   text-align: center;
 
-  background-image: url(/images/bg-header-mobile.png);
+  background-image: url('../images/bg-header-mobile.png');
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
 
   @include breakpoint(medium) {
-    background-image: url(/images/bg-header-desktop.png);
+    background-image: url('../images/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
